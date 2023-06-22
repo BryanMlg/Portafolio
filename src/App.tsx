@@ -4,6 +4,8 @@ import Aboutme from "./Components/Aboutme.js";
 import Subtitle from "./Components/Subtitle.js";
 import ProyectsList from "./Containers/ProyectsList.js";
 import SkillsList from "./Containers/SkillsList.js";
+import Footer from "./Components/Footer.js";
+import Contact from "./Components/Contact.js";
 function App() {
 
   return (
@@ -16,6 +18,9 @@ function App() {
     <ProyectsList/>
     <Subtitle subtitle="Skills"/>
     <SkillsList/>
+    <Subtitle subtitle="Contacto:"/>
+    <Contact/>
+    <Footer/>
     </>
     
   )

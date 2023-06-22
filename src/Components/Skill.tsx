@@ -1,12 +1,27 @@
+import Aos from "aos";
+import { useEffect } from "react";
 interface SkillsProps {
   image: string;
 }
 
 const Skills: React.FC<SkillsProps> = ({ image }) => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <section className="d-flex justify-content-center align-items-center">
+    <section className="d-flex justify-content-center align-items-center" data-aos="zoom-out-down">
       <div>
-        <img src={image} alt="Tool" style={{width:"150px",height:"150px"}}/>
+        <img
+          src={image}
+          alt="Tool"
+          className="img-fluid"
+          style={{
+            width: "75px",
+            height: "75px",
+            minWidth: "50px",
+            minHeight: "50px",
+          }}
+        />
       </div>
     </section>
   );
