@@ -18,7 +18,7 @@ function App() {
     <ProyectsList/>
     <Subtitle subtitle="Skills"/>
     <SkillsList/>
-    <Subtitle subtitle="Contacto:"/>
+    <Subtitle subtitle="Contacto"/>
     <Contact/>
     <Footer/>
     </>
