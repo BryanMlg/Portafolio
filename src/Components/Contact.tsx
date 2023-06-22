@@ -1,6 +1,7 @@
 export default function Contact() {
   return (
     <section className="container mt-4 text-center" data-aos="flip-left"
+    id="Contact"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1500">
     <p>Llámame, o escríbeme un e-mail.</p>

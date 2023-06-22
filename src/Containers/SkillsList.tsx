@@ -13,7 +13,7 @@ import Git from "../assets/Git.svg";
 import Vite from "../assets/vite.svg"
 export default function SkillsList() {
   return (
-    <section className="container">
+    <section className="container" id="Skills">
       <h3 className="text-center text-info mb-3 mt-5">Lenguajes</h3>
       <div className="row d-flex justify-content-center align-items-center">
         <div className="col-2">

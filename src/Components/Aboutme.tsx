@@ -12,8 +12,9 @@ export default function Aboutme() {
       data-aos="fade-down"
       data-aos-easing="ease-in-out"
       data-aos-duration="1000"
+      id="aboutme"
     >
-      <Subtitle subtitle="Sobre Mi" />
+      <Subtitle subtitle="Sobre Mi"/>
       <div
         data-aos="fade-left"
         className="d-flex justify-content-evenly align-items-center  px-5 flex-column flex-sm-row mt-5"

@@ -11,6 +11,7 @@ export default function Hero() {
       data-aos="fade-down"
       data-aos-easing="ease-in-out"
       data-aos-duration="1000"
+      id="Hero"
     >
       <div>
         <h1>Hola,</h1>

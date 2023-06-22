@@ -1,7 +1,13 @@
 import Logo from "../assets/5.png";
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-md border-bottom shadow-sm">
+    <nav
+      className="navbar navbar-expand-md border-bottom shadow-sm sticky-top"
+      style={{
+        backgroundColor: "rgba(255, 255, 255, 0.8)",
+        backdropFilter: "blur(5px)",
+      }}
+    >
       <button
         className="navbar-toggler ms-3"
         type="button"
@@ -13,7 +19,12 @@ export default function Header() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-        <img src={Logo} alt="Logo" style={{ width: "75px", height: "75px" }} className="d-flex justify-content-center align-items-center mt-2 ms-4" />
+      <img
+        src={Logo}
+        alt="Logo"
+        style={{ width: "75px", height: "75px" }}
+        className="d-flex justify-content-center align-items-center mt-2 ms-4"
+      />
       <div
         className="collapse navbar-collapse justify-content-end px-5"
         id="nav-toggler"
@@ -25,18 +36,23 @@ export default function Header() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#aboutme">
               Sobre mi
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#Proyects">
               Proyectos
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#Skills">
               Skills
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#Contact">
+              Contacto
             </a>
           </li>
           <li className="nav-item"></li>
