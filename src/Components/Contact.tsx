@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section className="container mt-4 text-center" data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
-    data-aos-duration="1000">
+    data-aos-duration="1500">
     <p>Llámame, o escríbeme un e-mail.</p>
     <div className="container py-5 px-3 d-flex shadow-lg rounded justify-content-center align-items-center flex-column">
     <i className="bi bi-envelope-at fw-medium"> bryanmlg2018@gmail.com</i>

@@ -9,8 +9,8 @@ const Skills: React.FC<SkillsProps> = ({ image }) => {
     Aos.init();
   }, []);
   return (
-    <section className="d-flex justify-content-center align-items-center" data-aos="zoom-out-down">
-      <div>
+    <section className="d-flex justify-content-center align-items-center">
+      <div data-aos="zoom-out-down" data-aos-duration="1200">
         <img
           src={image}
           alt="Tool"

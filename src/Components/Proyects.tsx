@@ -9,7 +9,7 @@ export default function Proyects() {
     <div
       className="card shadow p-3 mb-5 bg-body-tertiary rounded"
       data-aos="fade-up"
-      data-aos-duration="500"
+      data-aos-duration="800"
     >
       <img
         src={Imagen}
