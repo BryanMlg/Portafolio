@@ -1,5 +1,10 @@
+import { useContext } from "react";
+import { AppContext } from "../Context/ContextApp";
 import Logo from "../assets/5.png";
+
 export default function Header() {
+  const { isOn, toggleSwitch } = useContext(AppContext);
+
   return (
     <nav
       className="navbar navbar-expand-md border-bottom shadow-sm sticky-top"
@@ -32,38 +37,33 @@ export default function Header() {
         <ul className="navbar-nav nav-underline justify-content-center align-items-center fw-bold">
           <li className="nav-item">
             <a className="nav-link" aria-current="page" href="#">
-              Home
+            {isOn ? "Inicio" : "Home"}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#aboutme">
-              Sobre mi
+            {isOn ? "Sobre Mi" : "About Me"}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#Proyects">
-              Proyectos
+            {isOn ? "Proyectos" : "Proyect"}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#Skills">
-              Skills
+            {isOn ? "Habilidades" : "Skills"}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#Contact">
-              Contacto
+              {isOn ? "Contacto" : "Contact"}
             </a>
           </li>
           <li className="nav-item"></li>
           <li>
-            <a className="nav-link" href="#">
-              ES
-            </a>
-          </li>
-          <li>
-            <a className="nav-link" href="#">
-              EN
+            <a className="nav-link" href="#" onClick={toggleSwitch}>
+              {isOn ? "ES" : "EN"}
             </a>
           </li>
         </ul>

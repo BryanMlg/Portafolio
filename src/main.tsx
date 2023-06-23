@@ -5,8 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'aos/dist/aos.css';
+import { AppProvider } from './Context/ContextApp.tsx';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
+    <AppProvider>
     <App />
+    </AppProvider>
   </React.StrictMode>,
 )

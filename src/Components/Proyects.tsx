@@ -19,7 +19,10 @@ export default function Proyects() {
       <div className="card-body">
         <h5 className="card-title">E-commerce</h5>
         <p className="card-text">
-          Tienda con modulos de compra, administrador, inicio de sesion y mas
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+          deleniti? Eius error obcaecati suscipit dicta, dolore quos molestiae
+          placeat deserunt tenetur reprehenderit vitae ex, quo rerum culpa
+          praesentium iusto? Dolore?
         </p>
         <div className="d-flex justify-content-center align-items-center">
           <a href="#" className="btn btn-outline-secondary">

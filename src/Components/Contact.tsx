@@ -1,10 +1,17 @@
+import { useContext } from "react";
+import { AppContext } from "../Context/ContextApp";
 export default function Contact() {
+  const { isOn } = useContext(AppContext);
   return (
     <section className="container mt-4 text-center" data-aos="flip-left"
     id="Contact"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1500">
-    <p>Llámame, o escríbeme un e-mail.</p>
+    {isOn ? (
+        <p>Llámame, o escríbeme un e-mail.</p>
+      ) : (
+        <p>Call me, or send me an e-mail</p>
+      )}
     <div className="container py-5 px-3 d-flex shadow-lg rounded justify-content-center align-items-center flex-column">
     <i className="bi bi-envelope-at fw-medium"> bryanmlg2018@gmail.com</i>
     <i className="bi bi-telephone fw-medium mt-2"> +502 4101-0637</i>

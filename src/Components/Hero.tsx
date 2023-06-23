@@ -1,10 +1,13 @@
 import { useEffect } from "react";
 import Imagen from "../assets/hero-inferior.svg";
+import { useContext } from "react";
+import { AppContext } from "../Context/ContextApp";
 import Aos from "aos";
 export default function Hero() {
   useEffect(() => {
     Aos.init();
   }, []);
+  const {isOn} = useContext(AppContext);
   return (
     <section
       className="d-flex justify-content-around align-items-center  px-5 flex-column flex-md-row mt-5 mb-5"
@@ -14,9 +17,9 @@ export default function Hero() {
       id="Hero"
     >
       <div>
-        <h1>Hola,</h1>
+        {isOn ? <h1>Hola,</h1> : <h1>Hi,</h1>}
         <div className="d-flex">
-          <h1>Soy</h1>
+          {isOn ? <h1>Soy</h1> : <h1>I'm</h1>}
           <h1 className="ms-2 text-primary ">Bryan</h1>
         </div>
         <h1>Frontend Developer</h1>
@@ -25,7 +28,7 @@ export default function Hero() {
           className="btn btn-primary mt-5"
           style={{ width: "260px", height: "50px" }}
         >
-          Ver CV
+           {isOn ? "Ver CV" : "See Resume"}
         </button>
       </div>
       <div>

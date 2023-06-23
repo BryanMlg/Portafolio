@@ -10,11 +10,18 @@ import React from "../assets/react.svg";
 import Tailwind from "../assets/Tailwind.svg";
 import Webpack from "../assets/Webpack.svg";
 import Git from "../assets/Git.svg";
-import Vite from "../assets/vite.svg"
+import Vite from "../assets/vite.svg";
+import { useContext } from "react";
+import { AppContext } from "../Context/ContextApp";
 export default function SkillsList() {
+  const { isOn } = useContext(AppContext);
   return (
     <section className="container" id="Skills">
-      <h3 className="text-center text-info mb-3 mt-5">Lenguajes</h3>
+      {isOn ? (
+        <h3 className="text-center text-info mb-3 mt-5">Lenguajes</h3>
+      ) : (
+        <h3 className="text-center text-info mb-3 mt-5">Languages</h3>
+      )}
       <div className="row d-flex justify-content-center align-items-center">
         <div className="col-2">
           <Skill image={Imagen} />
@@ -23,7 +30,12 @@ export default function SkillsList() {
           <Skill image={Typescript} />
         </div>
       </div>
-      <h3 className="text-center text-info mb-3 mt-3">Maquetado</h3>
+
+      {isOn ? (
+        <h3 className="text-center text-info mb-3 mt-3">Maquetado</h3>
+      ) : (
+        <h3 className="text-center text-info mb-3 mt-3">Layout Design</h3>
+      )}
       <div className="row d-flex justify-content-center align-items-center">
         <div className="col-2 ">
           <Skill image={Css} />
@@ -35,9 +47,15 @@ export default function SkillsList() {
           <Skill image={Html} />
         </div>
       </div>
-      <h3 className="text-center text-info mb-3 mt-3">
-        Frameworks y Librerias
-      </h3>
+      {isOn ? (
+        <h3 className="text-center text-info mb-3 mt-3">
+          Frameworks y Librerias
+        </h3>
+      ) : (
+        <h3 className="text-center text-info mb-3 mt-3">
+          Frameworks and Libraries
+        </h3>
+      )}
       <div className="row d-flex justify-content-center align-items-center">
         <div className="col-2">
           <Skill image={Nextjs} />
@@ -52,9 +70,12 @@ export default function SkillsList() {
           <Skill image={React} />
         </div>
       </div>
-      <h3 className="text-center text-info mb-3 mt-3">
-       Herramientas
-      </h3>
+
+      {isOn ? (
+        <h3 className="text-center text-info mb-3 mt-3">Herramientas</h3>
+      ) : (
+        <h3 className="text-center text-info mb-3 mt-3">Tools</h3>
+      )}
       <div className="row d-flex justify-content-center align-items-center">
         <div className="col-2">
           <Skill image={Git} />
