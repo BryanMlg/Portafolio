@@ -1,12 +1,13 @@
 import React, { createContext, useState, ReactNode } from 'react';
 
 // Definición del contexto
-type AppContextType = {
+interface AppContextType {
   isOn: boolean;
   toggleSwitch: () => void;
 }
 
-export const AppContext = createContext<AppContextType | null>(null);
+export const AppContext = createContext<AppContextType>({} as AppContextType);
+
 
 export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [isOn, setIsOn] = useState<boolean>(false);
