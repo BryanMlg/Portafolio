@@ -10,7 +10,7 @@ export const AppContext = createContext<AppContextType>({} as AppContextType);
 
 
 export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [isOn, setIsOn] = useState<boolean>(false);
+  const [isOn, setIsOn] = useState<boolean>(true);
 
   const toggleSwitch = () => {
     setIsOn(!isOn);

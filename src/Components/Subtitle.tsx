@@ -9,10 +9,13 @@ const Subtitle: React.FC<SubtitleProps> = ({ subtitle }) => {
     Aos.init();
   }, []);
   return (
-    <div className="d-flex justify-content-center align-items-center" data-aos="fade-down">
+    <div
+      className="d-flex justify-content-center align-items-center"
+      data-aos="fade-down"
+    >
       <h1 className="text-center mt-5 border-bottom border-3 border-primary text-primary">
-      {subtitle}
-    </h1>
+        {subtitle}
+      </h1>
     </div>
   );
 };
