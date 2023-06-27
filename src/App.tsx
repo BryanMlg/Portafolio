@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Header from "./Components/Header.jsx";
 import Hero from "./Components/Hero.js";
 import Aboutme from "./Components/Aboutme.js";
@@ -8,8 +9,31 @@ import Footer from "./Components/Footer.js";
 import Contact from "./Components/Contact.js";
 import { useContext } from "react";
 import { AppContext } from "../src/Context/ContextApp.js";
+import Logo from "./assets/5.png";
 function App() {
+  const [loading, setLoading] = useState(true);
   const { isOn } = useContext(AppContext);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+        className="d-flex justify-content-center align-items-center"
+        style={{ height: "100vh" }}
+      >
+        <img
+          src={Logo}
+          alt="Logo"
+          className="spinner-grow d-flex justify-content-center align-items-center"
+          style={{ width: "150px", height: "150px" }}
+        />
+      </div>
+    );
+  }
+
   return (
     <>
       <Header />
