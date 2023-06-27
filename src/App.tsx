@@ -15,7 +15,9 @@ function App() {
   const { isOn } = useContext(AppContext);
 
   useEffect(() => {
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   }, []);
 
   if (loading) {
@@ -24,12 +26,13 @@ function App() {
         className="d-flex justify-content-center align-items-center"
         style={{ height: "100vh" }}
       >
-        <img
-          src={Logo}
-          alt="Logo"
-          className="spinner-grow d-flex justify-content-center align-items-center"
-          style={{ width: "150px", height: "150px" }}
-        />
+          <img
+            src={Logo}
+            alt="Logo"
+            className="spinner-grow d-flex justify-content-center align-items-center"
+            style={{ width: "150px", height: "150px" }}
+          />
+      
       </div>
     );
   }
