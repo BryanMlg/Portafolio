@@ -9,7 +9,7 @@ import Footer from "./Components/Footer.js";
 import Contact from "./Components/Contact.js";
 import { useContext } from "react";
 import { AppContext } from "../src/Context/ContextApp.js";
-import Logo from "./assets/5.png";
+import Logo from "./Assets/5.png";
 function App() {
   const [loading, setLoading] = useState(true);
   const { isOn } = useContext(AppContext);
