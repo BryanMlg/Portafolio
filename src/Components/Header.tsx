@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../Context/ContextApp";
-import Logo from "../Assets/5.png";
-import DarkLogo from "../Assets/b.png";
+import Logo from "../assets/5.png";
+import DarkLogo from "../assets/b.png";
 
 export default function Header() {
   const { isOn, toggleSwitch, isDark, toggleDark } = useContext(AppContext);
