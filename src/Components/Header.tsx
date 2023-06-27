@@ -16,14 +16,7 @@ export default function Header() {
     }
   }
 
-  if (LogoElement) {
-    if (isDark) {
-      LogoElement.setAttribute("href", "./src/assets/b.png");
-    } else {
-      LogoElement.setAttribute("href", "./src/assets/5.png")
-    }
-  }
-
+ 
   return (
     <nav
       className="navbar navbar-expand-md border-bottom shadow-sm sticky-top"
