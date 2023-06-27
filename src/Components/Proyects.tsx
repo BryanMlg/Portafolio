@@ -17,7 +17,7 @@ export default function Proyects() {
         alt="Proyect"
       />
       <div className="card-body">
-        <h5 className="card-title">E-commerce</h5>
+        <h5 className="card-title">Proyect</h5>
         <p className="card-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
           deleniti? Eius error obcaecati suscipit dicta, dolore quos molestiae
