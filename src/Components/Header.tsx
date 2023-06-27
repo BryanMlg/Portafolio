@@ -7,7 +7,7 @@ export default function Header() {
   const { isOn, toggleSwitch, isDark, toggleDark } = useContext(AppContext);
   
   const htmlElement = document.querySelector("html");
-  const LogoElement = document.querySelector("link")
+
   if (htmlElement) {
     if (isDark) {
       htmlElement.setAttribute("data-bs-theme", "dark");
