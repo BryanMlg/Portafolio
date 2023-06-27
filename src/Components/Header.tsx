@@ -5,22 +5,14 @@ import DarkLogo from "../assets/b.png";
 
 export default function Header() {
   const { isOn, toggleSwitch, isDark, toggleDark } = useContext(AppContext);
-  
+
   const htmlElement = document.querySelector("html");
-  const LogoElement = document.querySelector("link")
+
   if (htmlElement) {
     if (isDark) {
       htmlElement.setAttribute("data-bs-theme", "dark");
     } else {
       htmlElement.removeAttribute("data-bs-theme");
-    }
-  }
-
-  if (LogoElement) {
-    if (isDark) {
-      LogoElement.setAttribute("href", "./src/assets/b.png");
-    } else {
-      LogoElement.setAttribute("href", "./src/assets/5.png")
     }
   }
 
