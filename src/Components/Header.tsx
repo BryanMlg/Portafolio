@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { AppContext } from "../Context/ContextApp";
-import Logo from "../assets/5.png";
-import DarkLogo from "../assets/b.png";
+import Logo from "../Assets/5.png";
+import DarkLogo from "../Assets/b.png";
 
 export default function Header() {
   const { isOn, toggleSwitch, isDark, toggleDark } = useContext(AppContext);
   
   const htmlElement = document.querySelector("html");
-
+  const LogoElement = document.querySelector("link")
   if (htmlElement) {
     if (isDark) {
       htmlElement.setAttribute("data-bs-theme", "dark");
@@ -16,7 +16,14 @@ export default function Header() {
     }
   }
 
- 
+  if (LogoElement) {
+    if (isDark) {
+      LogoElement.setAttribute("href", "./src/assets/b.png");
+    } else {
+      LogoElement.setAttribute("href", "./src/assets/5.png")
+    }
+  }
+
   return (
     <nav
       className="navbar navbar-expand-md border-bottom shadow-sm sticky-top"
