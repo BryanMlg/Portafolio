@@ -14,7 +14,7 @@ export default function Contact() {
       )}
     <div className="container py-5 px-3 d-flex shadow-lg rounded justify-content-center align-items-center flex-column">
     <i className="bi bi-envelope-at fw-medium"> bryanmlg2018@gmail.com</i>
-    <i className="bi bi-telephone fw-medium mt-2"> +502 4101-0637</i>
+    <i className="bi bi-telephone fw-medium mt-2"> +502 4708-5405</i>
     <i className="bi bi-geo-alt mt-2 fw-medium"> Guatemala</i>
     <div className="mt-4 d-flex">
        <h1 className=""><a href="https://github.com/BryanMlg" className="link-secondary"><i className="bi bi-github"/></a></h1>

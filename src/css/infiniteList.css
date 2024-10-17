@@ -1,0 +1,22 @@
+.skills-slider {
+    width: 100%;
+    overflow: hidden; 
+    cursor: grab;
+}
+
+.skills-list {
+    display: flex;
+    transition: transform 0.1s linear; 
+}
+
+.skill-item {
+    width: 100px; 
+    height: 100px; 
+    flex: 0 0 auto; 
+}
+
+
+.skills-slider::-webkit-scrollbar {
+    display: none;
+}
+

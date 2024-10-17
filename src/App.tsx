@@ -49,8 +49,6 @@ function App() {
         <Subtitle subtitle="Proyects" />
       )}
       <ProyectsList />
-      <ProyectsList />
-
       {isOn ? (
         <Subtitle subtitle="Habilidades" />
       ) : (

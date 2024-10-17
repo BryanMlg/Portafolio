@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Imagen from "../assets/hero-inferior.svg";
 import { useContext } from "react";
 import { AppContext } from "../Context/ContextApp";
+import CV from "../assets/pdf/Bryan_Guerra_-_Desarrollador_Frontend.pdf"; 
 import Aos from "aos";
 export default function Hero() {
   useEffect(() => {
@@ -23,13 +24,15 @@ export default function Hero() {
           <h1 className="ms-2 text-primary ">Bryan</h1>
         </div>
         <h1>Frontend Developer</h1>
-        <button
-          type="button"
+        <a
+          href={CV} 
+          target="_blank" // Abre el archivo PDF en otra pestaña
+          rel="noopener noreferrer" // Mejora la seguridad al abrir en otra pestaña
           className="btn btn-primary mt-5"
-          style={{ width: "260px", height: "50px" }}
+          style={{ width: "260px", height: "40px" }}
         >
-           {isOn ? "Ver CV" : "See Resume"}
-        </button>
+          {isOn ? "Ver CV" : "See Resume"}
+        </a>
       </div>
       <div>
         <img

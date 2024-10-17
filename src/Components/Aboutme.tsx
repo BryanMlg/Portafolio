@@ -38,19 +38,36 @@ export default function Aboutme() {
           {isOn ? <h1>Soy Bryan Guerra</h1> : <h1>I'm Bryan Guerra</h1>}
           {isOn ? (
             <p>
-              Soy un apasionado por la programación y la música. La disciplina,
-              dedicación y compromiso son tres factores que me definen. Me gusta
-              dar siempre lo mejor de mí en todo, por más simple o compleja que
-              pueda ser la tarea. A continución, verás los proyectos que he
-              realizado hasta el momento.
+              Desarrollador frontend autodidacta con más de 2 años de
+              experiencia en la creación de interfaces web para diversos
+              sectores administrativos. He trabajado en proyectos relacionados
+              con transporte, inventarios, contabilidad, viáticos y recursos
+              humanos. Con una sólida experiencia en tecnologías frontend, me
+              especializo en comprender las necesidades específicas de los
+              usuarios y en diseñar soluciones personalizadas que mejoran su
+              experiencia e interacción con el producto. La disciplina,
+              dedicación y compromiso son tres factores que me definen, y
+              siempre doy lo mejor de mí en cada tarea, sin importar su
+              complejidad. Estoy comprometido con la mejora continua,
+              colaborando con equipos multidisciplinarios para lograr proyectos
+              de alta calidad y aportar valor a cada iniciativa en la que
+              participo.
             </p>
           ) : (
             <p>
-              I am passionate about programming and music. Discipline,
-              dedication, and commitment are three factors that define me. I
-              always strive to give my best in everything I do, no matter how
-              simple or complex the task may be. Below, you will find the
-              projects I have completed so far.
+              Self-taught frontend developer with over 2 years of experience in
+              creating web interfaces for various administrative sectors. I have
+              worked on projects related to transportation, inventory
+              management, accounting, travel expenses, and human resources. With
+              solid experience in frontend technologies, I specialize in
+              understanding the specific needs of users and designing
+              personalized solutions that enhance their experience and
+              interaction with the product. Discipline, dedication, and
+              commitment are three factors that define me, and I always give my
+              best in every task, no matter how complex it may be. I am
+              committed to continuous improvement, collaborating with
+              multidisciplinary teams to deliver high-quality projects and add
+              value to every initiative I’m involved in.
             </p>
           )}
         </div>
