@@ -3,7 +3,7 @@ import { AppContext } from "../Context/ContextApp";
 export default function Contact() {
   const { isOn } = useContext(AppContext);
   return (
-    <section className="container mt-4 text-center" data-aos="flip-left"
+    <section className="container mt-4 text-center w-50" 
     id="Contact"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1500">

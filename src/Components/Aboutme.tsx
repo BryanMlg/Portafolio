@@ -34,7 +34,7 @@ export default function Aboutme() {
             style={{ width: "250px", height: "auto" }}
           />
         </div>
-        <div className="card px-5 text-center col-md-7 shadow-lg">
+        <div className="card px-5 text-center col-md-7 shadow-sm">
           {isOn ? <h1>Soy Bryan Guerra</h1> : <h1>I'm Bryan Guerra</h1>}
           {isOn ? (
             <p>

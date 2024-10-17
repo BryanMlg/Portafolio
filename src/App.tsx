@@ -50,7 +50,7 @@ function App() {
       )}
       <ProyectsList />
       {isOn ? (
-        <Subtitle subtitle="Habilidades" />
+        <Subtitle subtitle="Conocimiento Tecnico" />
       ) : (
         <Subtitle subtitle="Skills" />
       )}

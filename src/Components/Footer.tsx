@@ -5,7 +5,7 @@ import { AppContext } from "../Context/ContextApp";
 export default function Footer() {
   const { isOn, isDark } = useContext(AppContext);
   return (
-    <footer className="conatiner-fluid border-top shadow-sm  rounded py-3 mt-5 d-flex justify-content-center align-items-center flex-column">
+    <footer className="conatiner-fluid border-top shadow-sm rounded py-3 mt-5 d-flex justify-content-center align-items-center flex-column">
       {isDark ? (
         <img
           src={DarkLogo}

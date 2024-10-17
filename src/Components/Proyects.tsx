@@ -5,9 +5,12 @@ import "../css/proyects.css";
 interface ProyectsProps {
   title: string;
   image: string;
+  webUrl: string;
+  gitHub: string;
+  description: string;
 }
 
-export default function Proyects({ title, image }: ProyectsProps) {
+export default function Proyects({ title, image, webUrl, gitHub, description}: ProyectsProps) {
   useEffect(() => {
     Aos.init();
   }, []);
@@ -16,7 +19,7 @@ export default function Proyects({ title, image }: ProyectsProps) {
     <>
       {/* Tarjeta activadora */}
       <div
-        className="card project-card shadow p-3 mb-5 bg-body-tertiary rounded"
+        className="card project-card shadow mb-5 bg-body-tertiary rounded"
         data-bs-toggle="modal"
         data-bs-target="#projectModal"
         data-aos="fade-up"
@@ -30,15 +33,11 @@ export default function Proyects({ title, image }: ProyectsProps) {
             <div className="overlay-content">
               <h5 className="card-title text-dark">{title}</h5>
               <p className="card-text text-dark">
-                Aplicación médica centrada en la gestión de pacientes, diseñada
-                para optimizar el seguimiento de enfermedades, síntomas y
-                tratamientos. Este sistema está dirigido tanto a médicos como a
-                pacientes, brindando una plataforma para la consulta, registro y
-                monitoreo de la salud general.
+                {description}
               </p>
               <div className="d-flex justify-content-center align-items-center">
                 <a
-                  href="https://feel-good-app.vercel.app/auth/login"
+                  href={webUrl}
                   className="btn btn-outline-dark"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -46,7 +45,7 @@ export default function Proyects({ title, image }: ProyectsProps) {
                   <i className="bi bi-globe"></i>
                 </a>
                 <a
-                  href="#"
+                  href={gitHub}
                   className="btn btn-outline-dark ms-3"
                   target="_blank"
                   rel="noopener noreferrer"

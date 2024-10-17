@@ -26,7 +26,7 @@ const Subtitle: React.FC<SubtitleProps> = ({ subtitle }) => {
         {subtitle === "Proyectos" || subtitle === "Proyects" ? (
           <>
             {subtitle}
-            <i className="bi bi-exclamation-circle icon-warning" />
+            <i className="bi bi-exclamation-circle icon-warning" id='Proyects'/>
 
             {isHovered && <span className="tooltip-text">Este portafolio incluye proyectos en los que he trabajado personalmente o freelance con permiso. Estoy disponible para discutir más sobre mi experiencia.</span>}
           </>
